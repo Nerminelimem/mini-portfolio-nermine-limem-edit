@@ -1,0 +1,155 @@
+/* ===== GENERAL STYLES ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f8f9fc;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3 {
+    color: #003366;
+}
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #fff;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: linear-gradient(120deg, #003366, #0066cc);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+}
+
+.btn {
+    background: #fff;
+    color: #003366;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e6e6e6;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    width: 85%;
+    margin: 60px auto;
+}
+
+.about ul.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+}
+
+.skills li {
+    list-style: none;
+    background: #e0eaff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* ===== PROJECT CARDS ===== */
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+    section {
+        width: 90%;
+    }
+}
